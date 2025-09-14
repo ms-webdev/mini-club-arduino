@@ -9,6 +9,8 @@ Wir möchten uns eine kleine Mini-Club Weihnachtseisenbahn bauen.
 
 A – Weiche eröffnet Doppel-Oval (72x44cm)
 
+![Doppel Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/images/gleisplan-doppel-oval.JPG)
+
 #### Märklin Broschüren
 
 https://digital.spur-z.de/gleisplaene/
