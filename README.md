@@ -3,7 +3,7 @@ Wir möchten uns eine kleine Mini-Club Weihnachtseisenbahn bauen.
 
 ## Idee
 
-..
+.
 
 ### Gleisplan für unser erstes Projekt
 
