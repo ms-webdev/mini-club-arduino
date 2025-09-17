@@ -11,8 +11,8 @@ Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://digital.
 
 - [x] 1x Weiche L 8562
 - [x] 1x Weiche R 8563
-- [ ] 4x Gerade 8500
-- [ ] 6x Bogen 8510
+- [x] 4x Gerade 8500
+- [x] 6x Bogen 8510
 - [ ] 2x Bogen 8591
 - [ ] 4x Bogen 8520
 
