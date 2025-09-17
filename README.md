@@ -3,7 +3,7 @@ Wir möchten uns eine kleine Mini-Club Weihnachtseisenbahn bauen.
 
 ### Gleisplan für unser erstes Projekt (WB25)
 
-A – Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://digital.spur-z.de/gleisplaene/)
+Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://digital.spur-z.de/gleisplaene/)
 
 ![Doppel Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/images/gleisplan-doppel-oval.JPG)
 
