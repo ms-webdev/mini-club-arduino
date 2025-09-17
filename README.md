@@ -9,7 +9,7 @@ A – Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://di
 
 #### Benötigte Gleise
 
-- [x] 1x Weiche L 8562 
+- [x] \1x Weiche L 8562 
 - [x] 1x Weiche R 8563
 - [ ] 4x Gerade 8500
 - [ ] 6x Bogen 8510
