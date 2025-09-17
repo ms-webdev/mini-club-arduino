@@ -1,19 +1,21 @@
 # Spur Z Anlage mit Arduino-Steuerung
 Wir möchten uns eine kleine Mini-Club Weihnachtseisenbahn bauen.
 
-## Idee
+### Gleisplan für unser erstes Projekt (WB25)
 
-.
-
-### Gleisplan für unser erstes Projekt
-
-A – Weiche eröffnet Doppel-Oval (72x44cm)
+A – Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://digital.spur-z.de/gleisplaene/)
 
 ![Doppel Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/images/gleisplan-doppel-oval.JPG)
 
-#### Märklin Broschüren
+#### Benötigte Gleise
 
-https://digital.spur-z.de/gleisplaene/
+- [x] 1x Weiche L 8562 
+- [x] 1x Weiche R 8563
+- [ ] 4x Gerade 8500
+- [ ] 6x Bogen 8510
+- [ ] 2x Bogen 8591
+- [ ] 4x Bogen 8520
+
 
 
 
