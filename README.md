@@ -5,7 +5,7 @@ Wir möchten uns eine kleine Mini-Club Weihnachtseisenbahn bauen.
 
 Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://digital.spur-z.de/gleisplaene/)
 
-![Doppel Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/images/gleisplan-doppel-oval.JPG)
+![Doppel Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/images/images/gleisplan-doppel-oval-01.png)
 
 #### Benötigte Gleise
 
@@ -16,7 +16,10 @@ Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://digital.
 - [ ] 2x Bogen 8591
 - [ ] 4x Bogen 8520
 
+#### Taster/Regler
 
+- [ ] 1x [Arcade-Tasten](https://www.amazon.de/EG-STARTS-beleuchtet-Arcade-Tasten-Mikroschalter/dp/B01N549IDL)
+- [ ] 1x [Motor-Drehzahlregler](https://www.amazon.de/RUNCCI-YUN-Motor-Drehzahlsteller-drehzahlregler-Motordrehzahl-Potentiometer/dp/B09L7XGGTR)
 
 ## Weichensteuerung
 Modul: ULN2803A - Darlington Transistor Array
