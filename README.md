@@ -1,5 +1,8 @@
 # Spur Z Anlage mit Arduino-Steuerung
-Wir möchten uns eine kleine analoge Mini-Club Weihnachtseisenbahn mit  bauen. Diese soll durch
+
+Wir möchten gerne eine kleine analoge Mini-Club Weihnachtseisenbahn aufbauen, die über den Microcontroller Arduino angesteuert werden soll.
+
+Durch das Bedienen eines Start-Buttons soll eine vordefinierte Szenerie über eine vorprogrammierte Routine abgespielt werden (Zugfahrt + Weichensteuerung, Beleuchtung und evtl. Sound). Der einzig mögliche Bedieneingriff ist die Regelung der Geschwindigkeit während des Abspielens der Routine.
 
 ### Gleisplan für unser erstes Projekt (WB25)
 
