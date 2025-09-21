@@ -6,26 +6,21 @@ Durch das Bedienen eines Start-Buttons soll eine vordefinierte Szenerie über ei
 
 ### Gleisplan für unser erstes Projekt (WB25)
 
-Weiche eröffnet Doppel-Oval (72x44cm) - [Märklin Broschüren](https://digital.spur-z.de/gleisplaene/)
+Diese Testbahn hat ein EINFACHES OVAL (36x50cm) ohne Weichen und wird keine Regelung der Geschwindigkeit beinhalten.
 
-![Doppel Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/images/gleisplan-doppel-oval-01.png)
+![Einfaches Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/wb25/images/gleisplan-wb25.png)
 
 #### Benötigte Gleise
 
-- [x] 1x Weiche L 8562
-- [x] 1x Weiche R 8563
 - [x] 4x Gerade 8500
-- [x] 6x Bogen 8510
-- [ ] 2x Bogen 8591
-- [ ] 4x Bogen 8520
+- [x] 8x Bogen 8520
 
-#### Taster/Regler
+#### Taster
 
-- [ ] 1x [Arcade-Tasten](https://www.amazon.de/EG-STARTS-beleuchtet-Arcade-Tasten-Mikroschalter/dp/B01N549IDL)
-- [ ] 1x [Motor-Drehzahlregler](https://www.amazon.de/RUNCCI-YUN-Motor-Drehzahlsteller-drehzahlregler-Motordrehzahl-Potentiometer/dp/B09L7XGGTR)
+Einfacher Arduino-Taster
 
-## Weichensteuerung
-Modul: ULN2803A - Darlington Transistor Array
+### Erster Entwurf
 
-### Schaltplan
-https://www.mikrocontroller.net/topic/417497
+![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/wb25/images/entwurf-wb25-01.jpeg)
+
+
