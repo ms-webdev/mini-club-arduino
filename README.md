@@ -8,7 +8,7 @@ Durch das Bedienen eines Start-Buttons soll eine vordefinierte Szenerie über ei
 
 Diese Testbahn hat ein EINFACHES OVAL (36x50cm) ohne Weichen und wird keine Regelung der Geschwindigkeit beinhalten.
 
-![Einfaches Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/wb25/images/gleisplan-wb25.png)
+![Einfaches Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/gleisplan-wb25.png)
 
 #### Benötigte Gleise
 
@@ -21,6 +21,6 @@ Einfacher Arduino-Taster
 
 ### Erster Entwurf
 
-![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/wb25/images/entwurf-wb25-01.jpeg)
+![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/entwurf-wb25-01.jpeg)
 
 
