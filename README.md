@@ -25,6 +25,11 @@ Einfacher Arduino-Taster: Dieser dient als Startknopf aber auch als NOT-AUS-Knop
 
 ![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/entwurf-wb25-02.jpeg)
 
+### Szenerie
+
+Unsere Szenerie hat nicht den Anspruch nach Maßstabstreue, die Spur-Z Eisenbahn im Maßstab 1:220 wird in einer Szenerie ungefähr des Spur-N-Maßstabes 1:160 platziert sein.
+
+Unsere Modellbahn soll den Eindruck einer Spieluhr haben, sprich das Dekor soll etwas wuchtiger wirken ohne jedoch der Eisenbahn den nötigen Raum zu nehmen.
 
 ### Fahrzeuge
 
