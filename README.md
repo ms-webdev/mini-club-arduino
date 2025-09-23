@@ -24,3 +24,13 @@ Einfacher Arduino-Taster
 ![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/entwurf-wb25-02.jpeg)
 
 
+
+### Fahrzeuge
+
+Wir wollen ein Gespann aus Dampflok und wegen den engen Gleisbögen (8520) Wagons mit kurzen Achsabständen verwenden:
+
+#### Dampflok 8895 BR 74 701 DB
+
+Diese Lok kommt mit einem geringen Bogenradius gut zurecht und hat mit einer niedrig angelegten Gleis-Spannung von nur 4 Volt eine harmonische Fahrgeschwindigkeit.
+
+![BR 74 701 DB](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/fahrzeug-dampflok-br-74-701.jpeg)
