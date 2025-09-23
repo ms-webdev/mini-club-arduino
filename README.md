@@ -19,8 +19,8 @@ Diese Testbahn hat ein EINFACHES OVAL (36x50cm) ohne Weichen und wird keine Rege
 
 Einfacher Arduino-Taster
 
-### Erster Entwurf
+### Letzter Entwurf
 
-![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/entwurf-wb25-01.jpeg)
+![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/entwurf-wb25-02.jpeg)
 
 
