@@ -14,8 +14,9 @@ Die Gleise sollen zwischen den Schwellen mit schwarzen Schrauben (2,3x8mm) auf d
 
 #### Benötigte Gleise
 
-- [x] 4x Gerade 8500
-- [x] 8x Bogen 8520
+- [x] 1x Anschluss 8590
+- [x] 3x Gerade 8500
+- [x] 8x Bogen 8510
 
 #### Taster
 
@@ -33,7 +34,7 @@ Unsere Modellbahn soll den Eindruck einer Spieluhr haben, sprich das Dekor soll 
 
 ### Fahrzeuge
 
-Wir wollen ein Gespann aus Dampflok und wegen den engen Gleisbögen (8520) Wagons mit kurzen Achsabständen verwenden:
+Wir wollen ein Gespann aus Dampflok und wegen den engen Gleisbögen (8510) Wagons mit kurzen Achsabständen verwenden:
 
 #### Dampflok 8895 BR 74 701 DB
 
