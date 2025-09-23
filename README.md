@@ -6,11 +6,11 @@ Durch das Bedienen eines Start-Buttons soll eine vordefinierte Szenerie über ei
 
 ### Gleisplan für unser erstes Projekt (Weihnachtsbahn 2025)
 
-Diese Testbahn hat ein EINFACHES OVAL (36x50cm) ohne Weichen und wird keine Regelung der Geschwindigkeit beinhalten.
+Diese Testbahn hat ein EINFACHES OVAL auf einer Grundplatte von 35x55cm ohne Weichen und wird keine Regelung der Geschwindigkeit beinhalten.
 
 ![Einfaches Oval](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/gleisplan-wb25.png)
 
-Die Gleise sollen zwischen den Schwellen mit schwarzen Scharauben (2,3x8mm) auf der Grundplatte verschraubt werden.
+Die Gleise sollen zwischen den Schwellen mit schwarzen Schrauben (2,3x8mm) auf der Grundplatte verschraubt werden.
 
 #### Benötigte Gleise
 
