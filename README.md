@@ -22,7 +22,7 @@ Die Gleise sollen zwischen den Schwellen mit schwarzen Schrauben (2,3x8mm) auf d
 
 Einfacher Arduino-Taster: Dieser dient als Startknopf aber auch als NOT-AUS-Knopf.
 
-### Letzter Entwurf
+### Aktueller Entwurf
 
 ![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/entwurf-wb25-02.jpeg)
 
