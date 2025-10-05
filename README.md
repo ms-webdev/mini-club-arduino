@@ -22,6 +22,8 @@ Die Gleise sollen zwischen den Schwellen mit schwarzen Schrauben (2,3x8mm) auf d
 
 Einfacher Arduino-Taster: Dieser dient als Startknopf aber auch als NOT-AUS-Knopf.
 
+Genutzt wird ein LED-Button, die Leuchtdauer entspricht nach Betätigung, die der festgelegten Dauer der Zugfahrt. [LED-Button Simulation](https://www.tinkercad.com/things/igp7I8i0vEC-led-button)
+
 ### Aktueller Entwurf
 
 ![Entwurf Weihnachtsbahn 2025](https://github.com/ms-webdev/mini-club-arduino/raw/main/WB25/images/entwurf-wb25-02.jpeg)
