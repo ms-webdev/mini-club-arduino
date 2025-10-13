@@ -1,18 +1,86 @@
 #include <Arduino.h>
+#include <Timer.h>
 
-// put function declarations here:
-int myFunction(int, int);
+// IBT2 - Motor
+const int PIN_motorRight = 9; // ~
+const int PIN_motorLeft = 10; // ~
+
+const int VMAX = 128; // max. 255
+
+// LED-Button
+const int buttonPin = 14; // A0
+const int ledPin = 12;
+
+bool ledState = false;
+int currentBtnState = LOW;
+int lastBtnState    = LOW;
+// Button debounce
+Timer debounce = Timer(1000);
+int freezed = 0;
+// int debounce = 1;
+
+// Laufzeit-Steuerung (Wie lange soll der Zug fahren)
+Timer timer = Timer(5000);
+int intervalTime = 3000;
+int resetTime = 0;
+int currentTime = 0;
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(9600);
+  // Serial.println("Start");
+
+  // IBT2 - PINS
+  pinMode(PIN_motorRight, OUTPUT);
+  pinMode(PIN_motorLeft, OUTPUT);
+  // IBT2 - INIT
+  digitalWrite(PIN_motorRight, LOW);
+  digitalWrite(PIN_motorLeft, LOW);
+  
+  pinMode(buttonPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+
+  // start timer
+  timer.start();
+  debounce.start();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // aktuelle Taster-Stellung
+  currentBtnState = getBtnState();  
+
+  if(currentBtnState == HIGH && lastBtnState == LOW && debounce.isReached()) {
+    ledState = !ledState; // Umkehr
+    // reset timer
+    timer.reset();
+    debounce.reset();
+  }
+
+  // Hole aktuellen Taster-Status
+  lastBtnState = currentBtnState;
+
+  // Timer?
+  if(timer.isReached()) ledState = false;
+
+  // STROM?
+  if (ledState) startTrain(); else stopTrain();  
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void startTrain() {
+  // LED: ON
+  digitalWrite(ledPin, HIGH);
+  // Motor-Right: ON
+  digitalWrite(PIN_motorLeft, LOW);
+  analogWrite(PIN_motorRight, VMAX);  
+}
+void stopTrain() {
+  // LED: OFF
+  digitalWrite(ledPin, LOW);
+  // Motor: OFF
+  digitalWrite(PIN_motorLeft, LOW);
+  digitalWrite(PIN_motorRight, LOW);
+}
+
+int getBtnState() {  
+  if(analogRead(buttonPin) > 1000) return HIGH;  // max. 1023
+  return LOW; 
 }
