@@ -5,7 +5,7 @@
 const int PIN_motorRight = 9; // ~
 const int PIN_motorLeft = 10; // ~
 
-const int VMAX = 128; // max. 255
+const int VMAX = 105; // max. 255
 
 // LED-Button
 const int buttonPin = 14; // A0
@@ -20,7 +20,7 @@ int freezed = 0;
 // int debounce = 1;
 
 // Laufzeit-Steuerung (Wie lange soll der Zug fahren)
-Timer timer = Timer(5000);
+Timer timer = Timer(20000);
 int intervalTime = 3000;
 int resetTime = 0;
 int currentTime = 0;
@@ -44,6 +44,27 @@ void setup() {
   debounce.start();
 }
 
+void startTrain() {
+  // LED: ON
+  digitalWrite(ledPin, HIGH);
+  // Motor-Right: ON
+  digitalWrite(PIN_motorLeft, LOW);
+  analogWrite(PIN_motorRight, VMAX);  
+}
+void stopTrain() {
+  // LED: OFF
+  digitalWrite(ledPin, LOW);
+  // Motor: OFF
+  digitalWrite(PIN_motorLeft, LOW);
+  digitalWrite(PIN_motorRight, LOW);
+}
+
+int getBtnState() {  
+  Serial.println(analogRead(buttonPin));
+  if(analogRead(buttonPin) >= 1023) return HIGH;  // max. 1023
+  return LOW; 
+}
+
 void loop() {
   // aktuelle Taster-Stellung
   currentBtnState = getBtnState();  
@@ -65,22 +86,3 @@ void loop() {
   if (ledState) startTrain(); else stopTrain();  
 }
 
-void startTrain() {
-  // LED: ON
-  digitalWrite(ledPin, HIGH);
-  // Motor-Right: ON
-  digitalWrite(PIN_motorLeft, LOW);
-  analogWrite(PIN_motorRight, VMAX);  
-}
-void stopTrain() {
-  // LED: OFF
-  digitalWrite(ledPin, LOW);
-  // Motor: OFF
-  digitalWrite(PIN_motorLeft, LOW);
-  digitalWrite(PIN_motorRight, LOW);
-}
-
-int getBtnState() {  
-  if(analogRead(buttonPin) > 1000) return HIGH;  // max. 1023
-  return LOW; 
-}

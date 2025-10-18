@@ -1,3 +1,5 @@
+/*
+
 #include <Arduino.h>
 #include <Timer.h>
 
@@ -70,6 +72,10 @@ bool isTimeReached() {
 int secis() {
   return millis()/1000;
 }
+
+
+
+*/
 
 
 /*
