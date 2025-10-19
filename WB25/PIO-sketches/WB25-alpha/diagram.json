@@ -54,8 +54,8 @@
     {
       "type": "wokwi-text",
       "id": "text1",
-      "top": -96,
-      "left": 9.6,
+      "top": -288,
+      "left": 172.8,
       "attrs": { "text": "IBT2 - H Bridge\nTrain Controller" }
     },
     {
@@ -195,10 +195,11 @@
     {
       "type": "wokwi-text",
       "id": "text8",
-      "top": -115.2,
-      "left": -201.6,
+      "top": 316.8,
+      "left": 441.6,
       "attrs": { "text": "Potentiometer für\nVmax Regelung" }
-    }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 305.9, "left": 335.8, "attrs": {} }
   ],
   "connections": [
     [ "bb1:1b.i", "bb1:5t.e", "white", [ "v0", "h19.2", "v-48", "h-57.6" ] ],
@@ -281,7 +282,10 @@
     [ "r6:1", "bb4:1b.g", "", [ "$bb" ] ],
     [ "r6:2", "bb4:7b.g", "", [ "$bb" ] ],
     [ "r7:1", "bb4:1t.d", "", [ "$bb" ] ],
-    [ "r7:2", "bb4:7t.d", "", [ "$bb" ] ]
+    [ "r7:2", "bb4:7t.d", "", [ "$bb" ] ],
+    [ "pot1:VCC", "bb3:tp.1", "red", [ "v9.6", "h36.8" ] ],
+    [ "pot1:GND", "bb3:tn.10", "black", [ "v9.6", "h-28.8" ] ],
+    [ "pot1:SIG", "bb3:19t.a", "green", [ "v19.2", "h-106" ] ]
   ],
   "dependencies": {}
 }

@@ -6,6 +6,7 @@ const int PIN_motorRight = 9; // ~
 const int PIN_motorLeft = 10; // ~
 
 const int VMAX = 105; // max. 255
+int speed = VMAX; // init speed
 
 // Relay - Doppel
 const int PIN_relay1 = 7;
@@ -14,6 +15,9 @@ const int PIN_relay2 = 8;
 // LED-Button
 const int buttonPin = 14; // A0
 const int ledPin = 12;
+
+// Potenziometer
+const int PIN_regler = A7;
 
 bool ledState = false;
 int currentBtnState = LOW;
@@ -60,7 +64,7 @@ void startTrain() {
   digitalWrite(ledPin, HIGH);
   // Motor-Right: ON
   digitalWrite(PIN_motorLeft, LOW);
-  analogWrite(PIN_motorRight, VMAX);  
+  analogWrite(PIN_motorRight, speed);  // ehemals VMAX
 }
 void stopTrain() {
   // LED: OFF
@@ -85,7 +89,7 @@ void loop() {
     // reset timer
     timer.reset();
     debounce.reset();
-  }
+  }  
 
   // Hole aktuellen Taster-Status
   lastBtnState = currentBtnState;
@@ -93,7 +97,11 @@ void loop() {
   // Timer?
   if(timer.isReached()) ledState = false;
 
+  //
+  speed = VMAX + (((analogRead(PIN_regler) - 512) * 0.001) * VMAX);
+  Serial.println(speed);
+
   // STROM?
-  if (ledState) startTrain(); else stopTrain();  
+  if (ledState) startTrain(); else stopTrain();
 }
 
