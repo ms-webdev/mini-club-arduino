@@ -191,6 +191,13 @@
       "top": 460.8,
       "left": 48,
       "attrs": { "text": "Beleuchtung" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text8",
+      "top": -115.2,
+      "left": -201.6,
+      "attrs": { "text": "Potentiometer für\nVmax Regelung" }
     }
   ],
   "connections": [
