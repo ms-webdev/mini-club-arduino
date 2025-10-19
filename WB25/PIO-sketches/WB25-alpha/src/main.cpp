@@ -5,7 +5,7 @@
 const int PIN_motorRight = 9; // ~
 const int PIN_motorLeft = 10; // ~
 
-const int VMAX = 1; //105; // max. 255
+const int VMAX = 105; // max. 255
 
 // Relay - Doppel
 const int PIN_relay1 = 7;
