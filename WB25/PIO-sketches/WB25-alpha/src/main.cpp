@@ -5,7 +5,11 @@
 const int PIN_motorRight = 9; // ~
 const int PIN_motorLeft = 10; // ~
 
-const int VMAX = 105; // max. 255
+const int VMAX = 1; //105; // max. 255
+
+// Relay - Doppel
+const int PIN_relay1 = 7;
+const int PIN_relay2 = 8;
 
 // LED-Button
 const int buttonPin = 14; // A0
@@ -35,6 +39,13 @@ void setup() {
   // IBT2 - INIT
   digitalWrite(PIN_motorRight, LOW);
   digitalWrite(PIN_motorLeft, LOW);
+
+  // Relay - PINS
+  pinMode(PIN_relay1, OUTPUT);
+  pinMode(PIN_relay2, OUTPUT);
+  // Relay - INIT
+  digitalWrite(PIN_relay1, HIGH);
+  digitalWrite(PIN_relay2, LOW);
   
   pinMode(buttonPin, INPUT);
   pinMode(ledPin, OUTPUT);
@@ -60,7 +71,7 @@ void stopTrain() {
 }
 
 int getBtnState() {  
-  Serial.println(analogRead(buttonPin));
+  // Serial.println(analogRead(buttonPin));
   if(analogRead(buttonPin) >= 1023) return HIGH;  // max. 1023
   return LOW; 
 }

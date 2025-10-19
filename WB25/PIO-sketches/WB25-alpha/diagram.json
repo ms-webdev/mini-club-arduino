@@ -27,6 +27,14 @@
       "rotate": 180,
       "attrs": {}
     },
+    {
+      "type": "wokwi-breadboard-mini",
+      "id": "bb4",
+      "top": 298.5,
+      "left": 3.5,
+      "rotate": 90,
+      "attrs": { "color": "#2958b0" }
+    },
     { "type": "wokwi-arduino-nano", "id": "nano", "top": 120, "left": 153.1, "attrs": {} },
     {
       "type": "wokwi-led",
@@ -130,6 +138,59 @@
       "top": -101.65,
       "left": 345.6,
       "attrs": { "value": "5000" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led5",
+      "top": 325.6,
+      "left": 141,
+      "rotate": 90,
+      "attrs": { "color": "orange", "flip": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led6",
+      "top": 325.6,
+      "left": 1.4,
+      "rotate": 270,
+      "attrs": { "color": "orange" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": 312,
+      "left": 37.85,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r7",
+      "top": 312,
+      "left": 85.85,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": 288,
+      "left": 163.2,
+      "attrs": { "text": "Relay#2\nIN2" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text6",
+      "top": 288,
+      "left": -38.4,
+      "attrs": { "text": "Relay#1\nIN1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text7",
+      "top": 460.8,
+      "left": 48,
+      "attrs": { "text": "Beleuchtung" }
     }
   ],
   "connections": [
@@ -150,6 +211,10 @@
     [ "bb3:26t.a", "bb2:15b.j", "blue", [ "v67.2", "h297.6", "v-432", "h-153.6", "v9.6" ] ],
     [ "bb2:7t.a", "bb3:29b.j", "cyan", [ "v38.4", "h-249.6" ] ],
     [ "bb2:9b.f", "bb3:bn.3", "white", [ "v0" ] ],
+    [ "bb4:1b.f", "bb3:24b.j", "orange", [ "v-211.2", "h144" ] ],
+    [ "bb3:25b.j", "bb4:1t.e", "orange", [ "v-9.6", "h-105.6" ] ],
+    [ "bb4:8t.e", "bb3:tn.30", "white", [ "h0" ] ],
+    [ "bb4:8b.f", "bb4:8t.e", "white", [ "h0" ] ],
     [ "nano:12", "bb3:29b.g", "", [ "$bb" ] ],
     [ "nano:11", "bb3:28b.g", "", [ "$bb" ] ],
     [ "nano:10", "bb3:27b.g", "", [ "$bb" ] ],
@@ -201,7 +266,15 @@
     [ "r4:1", "bb2:7b.h", "", [ "$bb" ] ],
     [ "r4:2", "bb2:7t.d", "", [ "$bb" ] ],
     [ "r5:1", "bb2:15b.g", "", [ "$bb" ] ],
-    [ "r5:2", "bb2:9b.g", "", [ "$bb" ] ]
+    [ "r5:2", "bb2:9b.g", "", [ "$bb" ] ],
+    [ "led5:A", "bb4:7t.a", "", [ "$bb" ] ],
+    [ "led5:C", "bb4:8t.a", "", [ "$bb" ] ],
+    [ "led6:A", "bb4:7b.j", "", [ "$bb" ] ],
+    [ "led6:C", "bb4:8b.j", "", [ "$bb" ] ],
+    [ "r6:1", "bb4:1b.g", "", [ "$bb" ] ],
+    [ "r6:2", "bb4:7b.g", "", [ "$bb" ] ],
+    [ "r7:1", "bb4:1t.d", "", [ "$bb" ] ],
+    [ "r7:2", "bb4:7t.d", "", [ "$bb" ] ]
   ],
   "dependencies": {}
 }
